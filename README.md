@@ -1,6 +1,6 @@
 # ⚙️ Shell Scripts
 
-Este repositório contém meus estudos, anotações e exercícios de automação usando **Shell Script** no Linux. É uma das etapas do meu cronograma de 14 meses para me tornar um DevOps Júnior.
+Este repositório contém meus estudos, anotações e exercícios de automação usando **Shell Script** no Linux. É uma das etapas do meu cronograma para me tornar um DevOps Júnior.
 
 ## 📌 O que são Shell Scripts?
 Shell scripts são arquivos de texto contendo comandos que podem ser executados sequencialmente pelo terminal. Eles automatizam tarefas repetitivas, facilitando a administração de sistemas e servidores.
