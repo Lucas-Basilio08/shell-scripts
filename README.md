@@ -23,6 +23,7 @@ shell-scripts/
 ├── 01-comandos-basicos.sh
 
 ├── 02-variaveis-e-entrada.sh
+
 ├── 03-condicionais.sh
 
 ├── 04-loops.sh
