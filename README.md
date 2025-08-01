@@ -19,17 +19,28 @@ Shell scripts são arquivos de texto contendo comandos que podem ser executados 
 
 ## 📂 Estrutura do repositório
 shell-scripts/
+
 ├── 01-comandos-basicos.sh
+
 ├── 02-variaveis-e-entrada.sh
 ├── 03-condicionais.sh
+
 ├── 04-loops.sh
+
 ├── 05-funcoes.sh
+
 ├── 06-projetos/
+
 │ ├── backup_local.sh
+
 │ └── usuario_novo.sh
+
 ├── desafios/
+
 │ ├── desafio01.sh
+
 │ └── desafio02.sh
+
 └── README.md
 
 
