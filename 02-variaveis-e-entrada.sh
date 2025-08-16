@@ -13,7 +13,7 @@ read -p "Digite o ano em que nasceu: " ANO_NASC
 
 # Calcular idade 
 ANO_ATUAL=$(date +%Y)
-IDADE=$(echo "$ANO_ATUAL-$ANO_NASC" |  bc -l)
+IDADE=$(echo "$ANO_ATUAL-$ANO_NASC" | bc -l)
 
 # Imprimir na tela
 echo "Olá, $NOME"
