@@ -1,4 +1,11 @@
-#!/bin/bash
+##########################################
+# Script: 02-variaveis-e-entrada.sh
+# Autor: Lucas Basilio
+# Data: 2025-08-16
+# Descrição: Exemplo de condicionais em Bash
+# Uso: ./02-variaveis-e-entrada.sh
+##########################################
+
 
 # Olá, esse tópico será mais para exercicios de shell mais complexos.
 # Nesse tópico irei falar o que deve ser feito e mostrar o comando(s) que vou utilizar.
@@ -6,6 +13,10 @@
 
 
 ## Exercicio 1: calcular a idade do usuario a partir do ano que ele nasceu e imprimir na tela.
+
+## Começo do Script
+
+#!/bin/bash
 
 # Pedir informações
 read -p "Digite seu nome: " NOME
@@ -23,6 +34,10 @@ echo "Esse ano você tem/terá $IDADE anos"
 
 
 ## Exercicio 2: modificar o calculo de idade para quando o usuario não colocar um nome ou uma data, a variavél retorne com alguma mensagem de erro.
+
+## Começo do Script
+
+#!/bin/bash
 
 # Pedir informações
 read -p "Digite seu nome: " NOME
