@@ -1,3 +1,12 @@
+##########################################
+# Script: 03-condicionais.sh
+# Autor: Lucas Basilio
+# Data: 2025-08-16
+# Descrição: Exemplo de condicionais em Bash
+# Uso: ./03-condicionais.sh
+##########################################
+
+
 ## Essa pasta está destinadas a condicionais
 ## Nessa pasta terá exercicios de if, elif e else
 ## Cada exercicio terá o que cada coisa faz e o codigo base somente.
