@@ -52,3 +52,35 @@ fi
 }
 ##################################################################################
 
+## Exercicio 2: Criar uma verificação com if, elif e else.
+## REGRAS:
+# Informar se o usuário poderá assistir a um filme com censura para maiores e com o ingresso que custa 50R$
+
+
+## Começo do script
+
+#!/bin/bash
+
+# Pedidos de nome, idade e quantidade de dinheiro.
+read -p "Olá, digite seu nome para continuar: " NOME
+read -p "Olá $NOME, agora preciso saber sua idade: " IDADE
+echo "O ingresso tem um determinado valor, preciso saber se a quantidade que você tem é correta"
+read -p "Quanto tem de dinheiro? " DINHEIRO
+
+# Verificação de idade
+if [ "$IDADE" -lt "18" ]
+then
+     echo "Você não pode assistir o filme"
+     echo "Idade não permitida. So maiores de 18 anos"
+# Verificação de valor
+elif [ "$DINHEIRO" -lt "50" ]
+then
+     echo "Você não tem dinheiro suficiente."
+     echo "Valor Necessario é 50R\$"
+# Caso o usuário passar em todas as verificações, retorna a mensagem de sucesso.
+else
+     echo "Você pode assistir o filme"
+fi
+######################################################################################################
+
+
