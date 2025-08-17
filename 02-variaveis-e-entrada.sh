@@ -28,7 +28,7 @@ echo "Esse ano você tem/terá $IDADE anos"
 read -p "Digite seu nome: " NOME
 read -p "Digite o ano em que nasceu: " ANO_NASC
 
-# Modificação (mensagem de erro)
+# Modificação (mensagem de erro se a variavél estiver vazia, e se tiver valor, exibe o valor colocado pelo usuario)
 echo "Nome Cadastrado: ${NOME:?Usuario não forneceu o nome\!}"
 echo "Data Nasc: ${ANO_NASC:?Usuario não forneceu o ano de nascimento\!}"
 
