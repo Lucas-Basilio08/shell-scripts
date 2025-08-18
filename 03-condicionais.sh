@@ -84,3 +84,53 @@ fi
 ######################################################################################################
 
 
+## Exercicio 3: Criar calculadora de faixa etária.
+
+## REGRAS:
+#Escreva um programa em shell script que pede e recebe a idade do usuário a partir da linha de comandos, e calcula a faixa etária do usuário. Utilize blocos IF.
+
+#As faixas etárias são:
+
+#De 0 a 2 anos - Bebê 
+#De 2 a 14 anos - Criança 
+#De 14 a 18 anos - Adolescente 
+#De 18 a 65 anos - Adulto 
+#Acima de 65 anos - Idoso
+
+
+#!/bin/bash
+
+# Falar com usuario e pedir idade
+echo "Olá, para começar irei precisar de alguns dados"
+read -p "Digite sua idade: " IDADE
+
+# Calcula faixa etária do bebê
+if [ "$IDADE" -le "2" ]
+then
+     echo "Pela sua idade, sua faixa etaria é de um bebê"
+
+# Calcula faixa etária da criança
+elif [ "$IDADE" -le "14" ]
+then
+     echo "Usuário é Criança"
+
+# Calcula faixa etária do adolescente
+elif [ "$IDADE" -le "18" ]
+then
+     echo "Usuário é Adolescente"
+
+# Calcula faixa etária do adulto
+elif [ "$IDADE" -le "65" ]
+then
+     echo "Usuário é Adulto(a)"
+
+# Calcula faixa etária do idoso(a)
+elif [ "$IDADE" -le "110" ]  
+then
+     echo "Usuário é idoso(a)"
+
+# Caso nenhuma bloco seja cumprido, entra como idade invalida
+else
+     echo "Idade invalida"
+fi
+#########################################################################################################
