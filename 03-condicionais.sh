@@ -17,7 +17,6 @@
 ## Exercicio 1 é meramente ilustrativo.
 
 ## Começo do Script
-
 #!/bin/bash
 
 ## Solicitação do nome de usuario
@@ -58,7 +57,6 @@ fi
 
 
 ## Começo do script
-
 #!/bin/bash
 
 # Pedidos de nome, idade e quantidade de dinheiro.
@@ -97,7 +95,7 @@ fi
 #De 18 a 65 anos - Adulto 
 #Acima de 65 anos - Idoso
 
-
+## Começo do script
 #!/bin/bash
 
 # Falar com usuario e pedir idade
@@ -134,3 +132,48 @@ else
      echo "Idade invalida"
 fi
 #########################################################################################################
+
+## Exercicio 4: Criar Uma Calculadora de baseada nas notas enviadas pelo usuário no terminal.
+
+#Escreva um programa em shell script que pede e recebe a nota do usuário a partir da linha de comandos, e calcula o conceito. Utilize blocos IF.
+
+# Os conceitos são:
+
+# De 0 a 5 potos - Insuficiente 
+# De 5 a 7 pontos - Regular 
+# De 7 a 9 pontos - Bom 
+# Acima de 9 pontos - Excelente
+
+
+## Começo do script
+#!/bin/bash
+
+
+# Pede informções
+read -p "Olá, me informe seu nome: " NOME
+read -p "Olá, $NOME. Agora me informe sua nota: " NOTA
+
+# Analisa de 0-5
+if [ "$NOTA" -le "5" ]
+then
+    echo "Nota Insuficiente"
+
+# Analisa de 7-9
+elif [ "$NOTA" -le "7" ]
+then
+    echo "Nota Regular"
+
+# Analisa de 9-7
+elif [ "$NOTA" -le "9" ]
+then 
+    echo "Nota Boa"
+
+# Analisa de 10-9
+elif [ "$NOTA" -le "10" ]
+then
+    echo "Nota Excelente"
+
+# Comunica mensagem de erro (e explica como são as notas)
+else
+    echo "Notas de 0-10"
+fi 
